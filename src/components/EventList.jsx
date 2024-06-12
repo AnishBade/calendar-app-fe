@@ -20,7 +20,7 @@ const EventList = ({ filterDate }) => {
       }
 
       try {
-        const response = await axios.get('http://localhost:8000/api/event/events/', {
+        const response = await axios.get('https://anishbade.pythonanywhere.com/api/event/events/', {
           headers: {
             Authorization: `Token ${token}`,
           },

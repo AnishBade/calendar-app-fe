@@ -22,7 +22,7 @@ const EditModal = ({ isOpen, onClose, event, onUpdate }) => {
 
     try {
       const response = await axios.patch(
-        `http://localhost:8000/api/event/events/${event.id}/`,
+        `https://anishbade.pythonanywhere.com/api/event/events/${event.id}/`,
         {
           title,
           start_time: startTime,

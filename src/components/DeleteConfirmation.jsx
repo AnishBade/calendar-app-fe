@@ -17,7 +17,7 @@ const DeleteConfirmation = ({ isOpen, onClose, eventId, onDelete }) => {
 
     try {
       const response = await axios.delete(
-        `http://localhost:8000/api/event/events/${eventId}/`,
+        `https://anishbade.pythonanywhere.com/api/event/events/${eventId}/`,
         {
           headers: {
             Authorization: `Token ${token}`,

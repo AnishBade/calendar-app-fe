@@ -11,12 +11,12 @@ function SignUp() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:8000/api/user/create/ ', {
+      await axios.post('https://anishbade.pythonanywhere.com/api/user/create/ ', {
         email,
         password,
         name,
       });
-      const response = await axios.post('http://localhost:8000/api/user/token/', {
+      const response = await axios.post('https://anishbade.pythonanywhere.com/api/user/token/', {
         email,
         password,
       });

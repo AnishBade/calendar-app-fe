@@ -30,7 +30,7 @@ const Modal = ({ isOpen, onClose, selectedDate }) => {
             console.log('end_time',eventEndTime)
             console.log('match',match);
             const response = await axios.post(
-                'http://localhost:8000/api/event/events/',
+                'https://anishbade.pythonanywhere.com/api/event/events/',
                 {
                     title: title,
                     start_time : eventStartTime,
